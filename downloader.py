@@ -53,7 +53,6 @@ class nse_down:
                     i +=1
                     tem_t -= timedelta(days=1)
                 except Exception as e:
-                    print(e)
                     tem_t -= timedelta(days=1)
             else:
                 tem_t -= timedelta(days=1)
