@@ -23,4 +23,4 @@ if __name__ == '__main__':
     c = downloader.nse_down()
     c.download()
     df = pd.read_csv("nse.csv")
-    app.run(debug=True)
+    app.run()
