@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Select Symbol</h1>
+
+<script>
+ function sub_fun(){
+ var symb = document.getElementById('symbols');
+ var sel = symb.options[symb.selectedIndex].value;
+ 
+ window.location.href = "/dashboard/symbol/"+sel;
+ };
+
+</script>
+<label for="symbols" style="text-align: center;">Choose a Symbol:</label>
+
+<select id="symbols">
+  {%for sys in symbols%}
+  <option value={{sys}} id="va">{{sys}}</option>
+  {%endfor%}
+  
+</select>
+  
+  <div>
+  <button onclick='sub_fun()'><font style="color:black">Submit</font></button>
+</body>
+</html>
